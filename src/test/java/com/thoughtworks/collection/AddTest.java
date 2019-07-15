@@ -20,16 +20,16 @@ public class AddTest {
         assertThat(add.getSumOfEvens(rightBorder, leftBorder)).isEqualTo(30);
     }
 
-//    @Test
-//    public void should_get_sum_of_odds() {
-//        //求leftBorder 和rightBorder之间的奇数和
-//        int leftBorder = 1;
-//        int rightBorder = 10;
-//
-//        Add add = new Add();
-//        assertThat(add.getSumOfOdds(leftBorder, rightBorder)).isEqualTo(25);
-//        assertThat(add.getSumOfOdds(rightBorder, leftBorder)).isEqualTo(25);
-//    }
+    @Test
+    public void should_get_sum_of_odds() {
+        //求leftBorder 和rightBorder之间的奇数和
+        int leftBorder = 1;
+        int rightBorder = 10;
+
+        Add add = new Add();
+        assertThat(add.getSumOfOdds(leftBorder, rightBorder)).isEqualTo(25);
+        assertThat(add.getSumOfOdds(rightBorder, leftBorder)).isEqualTo(25);
+    }
 
     @Test
     public void should_get_triple_and_add_two() {
@@ -56,15 +56,15 @@ public class AddTest {
         assertThat(add.getTripleOfOddAndAddTwo(arrayList)).isEqualTo(resultList);
     }
 
-//    @Test
-//    public void should_get_sum_of_processed_odd() {
-//        //求数组中奇数元素的3倍加5的和
-//        Integer[] array = new Integer[]{1, 5, 7, 12, 11, 35, 54, 67, 70};
-//        List<Integer> arrayList = Arrays.asList(array);
-//        Add add = new Add();
-//
-//        assertThat(add.getSumOfProcessedOdds(arrayList)).isEqualTo(408);
-//    }
+    @Test
+    public void should_get_sum_of_processed_odd() {
+        //求数组中奇数元素的3倍加5的和
+        Integer[] array = new Integer[]{1, 5, 7, 12, 11, 35, 54, 67, 70};
+        List<Integer> arrayList = Arrays.asList(array);
+        Add add = new Add();
+
+        assertThat(add.getSumOfProcessedOdds(arrayList)).isEqualTo(408);
+    }
 
 //    @Test
 //    public void should_process_elements() {
